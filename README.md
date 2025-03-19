@@ -6,10 +6,11 @@ This project is part of the **Big Data Analytics (BDA) course** in the **Master'
 It focuses on solving a **real-world Big Data problem** by leveraging **Apache Spark, Machine Learning, and Data Visualization** techniques.  
 
 📅 **Project Deadline**: May 25, 2025  
-👥 **Contributors**:  
-- Diogo Rodrigues  
-- Rafael Silva  
-- Zofia Wójcik  
+
+👥 **Contributors | Group 12**:  
+- Diogo Rodrigues, 20240512  
+- Rafael Silva, 20240511  
+- Zofia Wójcik, 20240654  
 
 ## 🎯 **Project Objective**
 > _Briefly describe the goal of your project. What problem does it solve? Why is it important?_  
