@@ -3,7 +3,7 @@
 ## 📖 Overview
 
 This project is part of the **Big Data Analytics (BDA) course** in the **Master's in Data Science and Advanced Analytics** at **NOVA IMS**.  
-It focuses on solving a **real-world Big Data problem** by leveraging **Apache Spark, Machine Learning, and Data Visualization** techniques.  
+It focuses on solving a **real-world Big Data problem** by leveraging **Apache Spark, Machine Learning, and Data Visualization** techniques.
 
 📅 **Project Deadline**: May 25, 2025  
 
@@ -12,52 +12,67 @@ It focuses on solving a **real-world Big Data problem** by leveraging **Apache S
 - Rafael Silva, 20240511  
 - Zofia Wójcik, 20240654  
 
+---
+
 ## 🎯 **Project Objective**
-> _Briefly describe the goal of your project. What problem does it solve? Why is it important?_  
-Example: _This project analyzes real-time social media sentiment to help brands monitor public perception and adjust marketing strategies._
+
+> _Can we predict the box office revenue of a movie before it is released?_  
+This project explores that question by building a **machine learning regression model** using **Apache Spark MLlib** to predict the **revenue** of a movie based on features such as budget, genre, popularity, vote average, and more.
+
+Accurate revenue predictions are valuable for studios, investors, and distributors, offering insights into risk management, marketing strategies, and production planning.
 
 ---
 
 ## 📊 **Dataset**
-- **Data Source**: (_e.g., Reddit API, Kaggle Dataset, Stock Market Data, Sensor Data_)  
-- **Size & Format**: (_e.g., 50GB JSON, CSV, Parquet_)  
-- **Preprocessing Steps**: (_e.g., missing value handling, data normalization, feature engineering_)  
+
+- **Data Source**: [Full IMDb Movies Data on Kaggle](https://www.kaggle.com/datasets/anandshaw2001/imdb-data)  
+- **Format**: CSV (~50,000 movie records)  
+- **Preprocessing Steps**:
+  - Handling missing values in budget and revenue
+  - One-hot encoding of categorical variables (e.g., genres, original language)
+  - Feature extraction from text columns (overview, keywords)
+  - Normalization and log-scaling for skewed numerical features
 
 ---
 
 ## 🛠 **Technology Stack**
-| Component          | Technology Used |
-|-------------------|----------------|
-| **Data Ingestion** | Apache Kafka, APIs (Reddit, Twitter, etc.) |
-| **Processing**     | Apache Spark (SQL, MLlib, Streaming) |
-| **Storage**       | Hadoop HDFS, NoSQL (MongoDB, Cassandra) |
-| **Machine Learning** | NLP (spaCy, NLTK), Clustering, Sentiment Analysis |
-| **Visualization** | Kibana, Matplotlib, Dashboards (Power BI/Tableau) |
-| **Deployment** | Docker, Kubernetes (if applicable) |
+
+| Component            | Technology Used             |
+|---------------------|-----------------------------|
+| **Data Ingestion**   | CSV loading in Databricks   |
+| **Processing**       | Apache Spark (SQL, MLlib)   |
+| **Storage**          | Databricks File System (DBFS) |
+| **Machine Learning** | Spark MLlib – Linear Regression, Random Forest |
+| **Visualization**    | Databricks Visualizations, Matplotlib |
+| **Deployment**       | (Optional – Not deployed)   |
 
 ---
 
 ## 🏗 **Methodology**
-1. **Problem Definition**: Identify key research questions and expected outcomes.  
-2. **Data Collection**: Extract structured/unstructured data from APIs, sensors, or databases.  
-3. **Preprocessing**: Handle missing values, tokenize text, and normalize features.  
-4. **Big Data Processing**: Use **Apache Spark** for parallel processing and analysis.  
-5. **Machine Learning**: Apply **ML models** (e.g., clustering, regression, NLP).  
-6. **Visualization**: Build real-time **dashboards** and **interactive reports**.  
+
+1. **Problem Definition**: Frame revenue prediction as a supervised regression task.
+2. **Data Collection**: Load dataset from Kaggle via Databricks notebook.
+3. **Preprocessing**: Clean and engineer features (budget, genres, language, popularity).
+4. **Big Data Processing**: Use Apache Spark to scale processing to large datasets.
+5. **Machine Learning**: Train regression models (Linear Regression, Decision Trees).
+6. **Evaluation**: Use RMSE, MAE, and R² for performance assessment.
+7. **Visualization**: Analyze feature importance and actual vs. predicted revenue plots.
 
 ---
 
 ## 📈 **Results & Insights**
-> _Once the analysis is complete, summarize key insights and findings here._  
-Example:  
-✅ **Identified key trends in social media sentiment**  
-✅ **Built a predictive model with 85% accuracy**  
-✅ **Deployed a real-time analytics dashboard**  
+
+> _Final results and visual insights will be updated upon project completion._  
+So far, we expect:
+- ✅ Identification of the most predictive features for revenue (e.g., budget, popularity)
+- ✅ Regression model with explainable performance metrics
+- ✅ Clear business insights for production and marketing strategies
 
 ---
 
 ## 🛠 **Installation & Setup**
-To run this project locally, follow these steps:
+
+To run this project locally (if not using Databricks), follow these steps:
 
 ### 1️⃣ Clone the Repository
 ```bash
